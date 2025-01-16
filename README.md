@@ -10,9 +10,9 @@
 ---
 ## 使用方法
 > [!IMPORTANT]
-> 原wenhook URL：https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken
-> 组合后URL：http://<server_ip:port>/webhook?target_url=https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken
-> URL传入：http://<server_ip:port>/webhook?target_url=<Original_URL>
+> 原wenhook URL：https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken<br>
+> 组合后URL：http://<server_ip:port>/webhook?target_url=https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken<br>
+> URL传入：http://<server_ip:port>/webhook?target_url=<Original_URL><br>
 ---
 简易安装步骤：
 
