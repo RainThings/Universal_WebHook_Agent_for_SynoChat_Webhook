@@ -1,12 +1,12 @@
 # Universal_WebHook_Agent_for_SynoChat_Webhook
 # Convert any webhook to Synology Chat webhook incoming
 ## 通过运行此程序你可以将大多数webhook请求经过它的转换传入SynologyChat平台的webhook
-将您的 Flask 应用部署到实际服务器并使其在后台运行，同时记录日志，您需要以下步骤：
+简易安装步骤：
 
 ---
 
 ### **1. 安装必要工具**
-确保您的服务器已安装以下软件：
+确保已安装以下软件：
 
 - **Python 3.x**（推荐 Python 3.8+）
 - **pip**（Python 包管理工具）
@@ -44,7 +44,7 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 - `-b 0.0.0.0:5000`: 绑定到所有网络接口的 5000 端口。
 - `app:app`: `app` 是文件名，第二个 `app` 是 Flask 应用的实例名。
 
-访问您的服务器地址 `http://<server_ip>:5000` 确保应用正常工作。
+访问的服务器地址 `http://<server_ip>:5000` 确保应用正常工作。
 
 ---
 
@@ -149,8 +149,4 @@ sudo ln -s /etc/nginx/sites-available/flask_app /etc/nginx/sites-enabled
 sudo systemctl restart nginx
 ```
 
-访问 `http://your_domain_or_ip`，您的应用应该正常工作。
-
----
-
-通过以上步骤，您的 Flask 应用已经成功部署到实际服务器，支持后台运行和日志记录，并且可以通过域名或 IP 访问。
+访问 `http://your_domain_or_ip`，应用应该正常工作。
