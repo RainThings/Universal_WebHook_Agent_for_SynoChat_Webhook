@@ -1,18 +1,25 @@
 # Universal_WebHook_Agent_for_SynoChat_Webhook
 # Convert any webhook to Synology Chat webhook incoming
 ## 通过运行此程序你可以将大多数webhook请求经过它的转换传入SynologyChat平台的webhook
-简易安装步骤：
+> [!WARNING]
+> ### 声明<br/>
+> 本程序未经严格测试，不保证其可用性、可靠性或性能。程序以“原样”提供，不附带任何明示或暗示的担保，包括但不限于安全性、适用性或特定用途的适用性。开发者不对因使用本程序而导致的任何损失承担责任。此外，因使用或转发本程序处理的信息内容而引发的任何后果，均由使用者自行承担责任。<br/>
+> ### Announce<br/>
+> This program has not undergone rigorous testing and comes with no guarantees regarding its usability, reliability, or performance. It is provided "as is" without any explicit or implied warranties, including but not limited to guarantees of security, suitability, or fitness for a particular purpose. The developer assumes no responsibility for any losses incurred as a result of using this program. Furthermore, the user bears sole responsibility for any consequences arising from the use or forwarding of information processed by this program.
 
 ---
+简易安装步骤：
+
 
 ### **1. 安装必要工具**
-确保已安装以下软件：
-
-- **Python 3.x**（推荐 Python 3.8+）
-- **pip**（Python 包管理工具）
-- **virtualenv**（用于创建隔离的 Python 环境）
-- **Supervisor**（进程管理工具，用于后台运行 Flask 应用并记录日志）
-- **Gunicorn**（生产环境推荐的 WSGI 服务器）
+> [!NOTE]
+>确保已安装以下软件：
+>
+> - **Python 3.x**（推荐 Python 3.8+）
+> - **pip**（Python 包管理工具）
+> - **virtualenv**（用于创建隔离的 Python 环境）
+> - **Supervisor**（进程管理工具，用于后台运行 Flask 应用并记录日志）
+> - **Gunicorn**（生产环境推荐的 WSGI 服务器）
 
 ---
 
@@ -115,7 +122,8 @@ sudo ufw allow 5000
 ---
 
 ### **6. 使用反向代理（可选）**
-生产环境推荐使用 Nginx 作为反向代理，以提供更好的性能和安全性。
+>[!NOTE]
+>生产环境推荐使用 Nginx 作为反向代理，以提供更好的性能和安全性。
 
 #### **6.1：安装 Nginx**
 ```bash
