@@ -8,7 +8,7 @@
 > This program has not undergone rigorous testing and comes with no guarantees regarding its usability, reliability, or performance. It is provided "as is" without any explicit or implied warranties, including but not limited to guarantees of security, suitability, or fitness for a particular purpose. The developer assumes no responsibility for any losses incurred as a result of using this program. Furthermore, the user bears sole responsibility for any consequences arising from the use or forwarding of information processed by this program.
 
 ---
-##使用方法
+## 使用方法
 > [!IMPORTANT]
 > 原wenhook URL：https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken
 > 组合后URL：http://<server_ip:port>/webhook?target_url=https://example.com:5001/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=exampaletoken
